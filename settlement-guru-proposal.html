@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Proposal - AVY Overclocked Computing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { 
+            font-family: 'Inter', sans-serif; 
+            -webkit-print-color-adjust: exact; 
+            print-color-adjust: exact; 
+        }
+        .page-break { page-break-before: always; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        @media print {
+            .card-hover:hover {
+                transform: none;
+            }
+        }
+        /* Page break optimization */
+        @media print {
+            section {
+                page-break-inside: avoid;
+            }
+            .card-hover {
+                page-break-inside: avoid;
+            }
+            table {
+                page-break-inside: avoid;
+            }
+            header {
+                page-break-after: avoid;
+            }
+            h1, h2, h3, h4 {
+                page-break-after: avoid;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-800">
+
+    <div class="max-w-[1200px] mx-auto bg-white shadow-2xl my-10 rounded-2xl overflow-hidden print:shadow-none print:m-0 print:w-full print:rounded-none">
+
+        <!-- Modern Header with Gradient -->
+        <header class="gradient-bg text-white p-12 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -mr-32 -mt-32"></div>
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full -ml-24 -mb-24"></div>
+            
+            <div class="relative z-10 flex items-center justify-between gap-8">
+                
+                
+                <div class="flex items-center gap-6 flex-1">
+                    <div>
+                        <div class="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
+                            <span class="text-xs font-semibold uppercase tracking-wider">Project Proposal</span>
+                        </div>
+                        <h1 class="text-4xl font-bold mb-2">Settlement Guru</h1>
+                        <p class="text-white/90 text-lg font-medium">Debt Settlement & Relief Platform</p>
+                    </div>
+                </div>
+                <img src="overclocked_hd.png" alt="AVY Overclocked Computing Logo" class="h-20 object-contain flex-shrink-0">
+                
+                <div class="text-right bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 flex-shrink-0 flex flex-col items-center justify-center">
+                    <h2 class="text-lg font-bold">AVY Overclocked Computing</h2>
+                    <span class="inline-block text-xs font-semibold bg-white text-purple-700 px-3 py-1 rounded-full mt-2">PVT Limited</span>
+                    <p class="text-sm text-white/80 mt-3">📅 January 18, 2026</p>
+                </div>
+            </div>
+        </header>
+
+        <div class="p-12">
+
+        <!-- Executive Summary -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center text-white font-bold text-xl">1</div>
+                <h3 class="text-2xl font-bold gradient-text">Executive Summary</h3>
+            </div>
+            <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-2xl border border-purple-100">
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    We propose the development of a comprehensive Debt Relief Business System for <strong class="text-purple-700">Settlement Guru</strong>. 
+                    Designed to compete with market leaders like <em>Credfix</em> and <em>Freed</em>, this solution includes a high-conversion public website and a secure, banking-grade Client Dashboard.
+                </p>
+            </div>
+        </section>
+
+        <!-- Scope of Work -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center text-white font-bold text-xl">2</div>
+                <h3 class="text-2xl font-bold gradient-text">Scope of Work</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 gap-6">
+                <div class="card-hover bg-white p-8 rounded-2xl border-2 border-blue-100 shadow-lg">
+                    <div class="flex items-start gap-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-xl text-gray-900 mb-4">A. Public Website (Customer Acquisition)</h4>
+                            <p class="text-gray-700 mb-4 leading-relaxed">This is the first thing potential customers see. It needs to look professional so they trust you immediately.</p>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="text-blue-500 font-bold text-lg mt-0">▸</span>
+                                    <div>
+                                        <strong class="text-gray-800 block">Trustworthy Design</strong>
+                                        <span class="text-sm text-gray-600">Clean and modern look that builds instant credibility with visitors</span>
+                                    </div>
+                                </li>
+
+                                <li class="flex items-start gap-3">
+                                    <span class="text-blue-500 font-bold text-lg mt-0">▸</span>
+                                    <div>
+                                        <strong class="text-gray-800 block">Success Stories & Testimonials</strong>
+                                        <span class="text-sm text-gray-600">Automated carousel showing reviews from happy clients to prove your track record</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-blue-500 font-bold text-lg mt-0">▸</span>
+                                    <div>
+                                        <strong class="text-gray-800 block">Blog & Social Integration</strong>
+                                        <span class="text-sm text-gray-600">WhatsApp Business integration and automatic Instagram feed connection showing your latest posts</span>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="text-blue-500 font-bold text-lg mt-0">▸</span>
+                                    <div>
+                                        <strong class="text-gray-800 block">Google Search (SEO) Optimization</strong>
+                                        <span class="text-sm text-gray-600">Built to be easily readable by Google, helping you rank higher in search results for relevant queries</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white p-8 rounded-2xl border-2 border-purple-100 shadow-lg">
+                    <div class="flex items-start gap-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-xl text-gray-900 mb-4">B. Customer Web & Mobile App (PWA)</h4>
+                            <p class="text-gray-700 mb-4 leading-relaxed">Once a customer signs up, they get access to this dashboard. It works seamlessly across web and mobile devices.</p>
+                            <div class="grid grid-cols-1 gap-3">
+                                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                                    <strong class="text-gray-800 block text-sm mb-2">🔐 Security & Access</strong>
+                                    <ul class="space-y-2 text-sm text-gray-600 pl-4">
+                                        <li>• <strong>Easy Login:</strong> No passwords to forget - customers log in using OTP on their mobile number</li>
+                                        <li>• <strong>Bot Protection:</strong> Smart security check (Cloudflare) stops fake signups and unauthorized access</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                                    <strong class="text-gray-800 block text-sm mb-2">✔️ Verification & Documentation</strong>
+                                    <ul class="space-y-2 text-sm text-gray-600 pl-4">
+                                        <li>• <strong>Digital KYC:</strong> Automatic Phone verification during onboarding</li>
+                                        <li>• <strong>Document Upload:</strong> Customers can photograph CIBIL reports or Bank Notices and upload them securely to Amazon S3 cloud</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                                    <strong class="text-gray-800 block text-sm mb-2">📊 Tracking & Transactions</strong>
+                                    <ul class="space-y-2 text-sm text-gray-600 pl-4">
+                                        <li>• <strong>Real-Time Loan Status:</strong> Customer can see exactly where their loan stands - "In Review", "Settlement Offer", "Paid", etc.</li>
+                                        <li>• <strong>Digital Signatures:</strong> Sign settlement agreements digitally on screen using Zoho Sign</li>
+                                        <li>• <strong>Online Payments:</strong> Customers can pay fees directly within the app with secure payment processing</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                                    <strong class="text-gray-800 block text-sm mb-2">📱 Mobile Experience</strong>
+                                    <ul class="space-y-2 text-sm text-gray-600 pl-4">
+                                        <li>• <strong>True Mobile App Feel:</strong> Works as Progressive Web App (PWA) - customers can add an icon to their home screen for instant access</li>
+                                        <li>• <strong>Fully Responsive:</strong> Perfect experience on Android, iPhone, tablets, and desktop browsers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white p-8 rounded-2xl border-2 border-indigo-100 shadow-lg">
+                    <div class="flex items-start gap-4">
+                        <div class="w-14 h-14 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h4 class="font-bold text-xl text-gray-900 mb-4">C. Admin & Operations Center</h4>
+                            <p class="text-gray-700 mb-4 leading-relaxed">Your internal hub where you and your team manage everything with complete control and transparency.</p>
+                            <div class="space-y-4">
+                                <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-100">
+                                    <strong class="text-gray-800 block text-sm mb-3">👤 For Callers/Agents</strong>
+                                    <ul class="space-y-2 text-sm text-gray-600 pl-4">
+                                        <li>• <strong>Assigned Customers Only:</strong> Each agent only sees customers you assign to them - no access to full database</li>
+                                        <li>• <strong>Status Updates:</strong> Can change loan status (e.g., "Negotiation Started", "Settlement Reached")</li>
+                                        <li>• <strong>One-Click Communication:</strong> Send WhatsApp or SMS updates to customers with a single click</li>
+                                        <li>• <strong>Call Logging:</strong> Automatically track all customer interactions and follow-ups</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-100">
+                                    <strong class="text-gray-800 block text-sm mb-3">👨‍💼 For Admin/Owner (You)</strong>
+                                    <ul class="space-y-2 text-sm text-gray-600 pl-4">
+                                        <li>• <strong>Complete Dashboard View:</strong> See everything - total active customers, total debt settled, total profit earned</li>
+                                        <li>• <strong>Real-Time Analytics:</strong> Monitor key metrics and performance indicators at a glance</li>
+                                        <li>• <strong>Team Management:</strong> Add/remove staff, assign customers, set permissions</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-indigo-50 p-4 rounded-lg border border-indigo-100">
+                                    <strong class="text-gray-800 block text-sm mb-3">🛡️ Audit Logs (Critical for Safety)</strong>
+                                    <ul class="space-y-2 text-sm text-gray-600 pl-4">
+                                        <li>• <strong>Complete Tracking:</strong> Every action by staff is recorded - status changes, deletions, document uploads</li>
+                                        <li>• <strong>Fraud Prevention:</strong> You'll always know WHO changed WHAT and WHEN</li>
+                                        <li>• <strong>Financial Safety:</strong> Protects your money from employee errors, mistakes, or fraud</li>
+                                        <li>• <strong>Compliance Ready:</strong> Audit trail available for regulatory requirements</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Architecture -->
+        <section class="mb-12">
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center text-white font-bold text-xl">3</div>
+                <h3 class="text-2xl font-bold gradient-text">Technical Architecture (The Engine)</h3>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-200">
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-white p-6 rounded-xl border-2 border-green-200 shadow-md">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-lg text-gray-900 mb-2">Backend Runtime: Node.js</h4>
+                                <p class="text-gray-700">Fast, scalable JavaScript runtime that can handle thousands of users simultaneously. Perfect for real-time updates and high-traffic applications without slowing down.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl border-2 border-blue-200 shadow-md">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-lg text-gray-900 mb-2">Database: Enterprise SQL</h4>
+                                <p class="text-gray-700">The same strict database type that banks use for their most critical financial data. Ensures 100% accuracy for all customer financial information, settlement details, and transaction records. Provides ACID compliance and data integrity.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl border-2 border-orange-200 shadow-md">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-lg text-gray-900 mb-2">Cloud Storage: Amazon S3</h4>
+                                <p class="text-gray-700">Secure cloud storage for all customer documents (CIBIL reports, bank notices, signed agreements, etc.). Even if the main server crashes, all customer files remain safe, backed up, and easily recoverable. Includes redundancy and automatic backups.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl border-2 border-purple-200 shadow-md">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 19c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM20 3H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-bold text-lg text-gray-900 mb-2">Server Infrastructure: Dual-Instance Setup</h4>
+                                <p class="text-gray-700">The Public Website and Customer Dashboard run on separate instances on the same server. This creates a strong, resilient setup - when many people visit the marketing website, your customers' dashboard continues working smoothly without any slowdown or interruptions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-break"></div>
+
+        <div class="hidden print:block border-b-2 border-gray-200 mb-8 pt-8"></div>
+
+        <!-- Investment & Payment Schedule -->
+        <section class="mb-12 mt-8">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center text-white font-bold text-xl">4</div>
+                <h3 class="text-2xl font-bold gradient-text">Investment & Payment Schedule</h3>
+            </div>
+            
+            <!-- Total Project Cost Highlight -->
+            <div class="mb-8 gradient-bg rounded-2xl p-8 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-white opacity-10 rounded-full -mr-16 -mt-16"></div>
+                <div class="relative z-10">
+                    <p class="text-white/90 text-sm font-medium uppercase tracking-wider mb-2">Total Project Cost</p>
+                    <div class="flex items-baseline gap-3">
+                        <span class="text-5xl font-bold">₹ 90,000</span>
+                    </div>
+                    <p class="text-white/80 text-sm mt-3">Payable in 3 milestone-based installments</p>
+                </div>
+            </div>
+
+            <div class="bg-white border-2 border-gray-200 rounded-2xl overflow-hidden shadow-lg mb-8">
+                <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 border-b-2 border-gray-200">
+                    <h4 class="font-bold text-gray-800 text-lg">Payment Milestones</h4>
+                    <p class="text-gray-600 text-sm mt-1">Progress-based payment structure for transparency</p>
+                </div>
+                <table class="w-full">
+                    <thead class="bg-gray-50 border-b-2 border-gray-200">
+                        <tr>
+                            <th class="p-5 text-left font-bold text-gray-700 text-sm">Phase</th>
+                            <th class="p-5 text-left font-bold text-gray-700 text-sm">Deliverable</th>
+
+                            <th class="p-5 text-right font-bold text-gray-700 text-sm">Timeline</th>
+                            <th class="p-5 text-right font-bold text-gray-700 text-sm">Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="p-5">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center font-bold text-blue-700">1</div>
+                                    <span class="font-semibold text-gray-900">Booking Advance</span>
+                                </div>
+                            </td>
+                            <td class="p-5 text-gray-600">Project initiation & UI Design start</td>
+
+                            <td class="p-5 text-right font-bold text-gray-900">1 week</td>
+                            <td class="p-5 text-right font-bold text-gray-900">₹ 9,000</td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="p-5">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center font-bold text-indigo-700">2</div>
+                                    <span class="font-semibold text-gray-900">Beta Release</span>
+                                </div>
+                            </td>
+                            <td class="p-5 text-gray-600">Completion of Dashboard Logic</td>
+
+                            <td class="p-5 text-right font-bold text-gray-900">2 weeks</td>
+                            <td class="p-5 text-right font-bold text-gray-900">₹ 9,000</td>
+                        </tr>
+                        <tr class="bg-gradient-to-r from-purple-50 to-blue-50 hover:from-purple-100 hover:to-blue-100 transition-colors">
+                            <td class="p-5">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center font-bold text-green-700">3</div>
+                                    <span class="font-semibold text-gray-900">Final Go-Live</span>
+                                </div>
+                            </td>
+                            <td class="p-5 text-gray-600">Server Deployment & Source Handover</td>
+
+                            <td class="p-5 text-right font-bold text-gray-900">4 weeks</td>
+                            <td class="p-5 text-right font-bold text-gray-900">₹ 78,000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="bg-gradient-to-r from-gray-100 to-gray-50 border-t-2 border-gray-300">
+                        <tr>
+                            <td colspan="2" class="p-5 font-bold text-gray-900 text-lg">Total Project Cost</td>
+
+                            <td class="p-5 text-right font-bold text-gray-900"></td>
+                            <td class="p-5 text-right font-bold text-gray-900 text-lg">₹ 90,000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="bg-gradient-to-br from-amber-50 to-orange-50 border-l-4 border-amber-400 p-6 rounded-xl shadow-md">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-amber-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h4 class="font-bold text-amber-900 text-lg mb-2">Annual Maintenance Contract (AMC)</h4>
+                        <p class="text-amber-800 leading-relaxed">
+                            Starts 1 year after launch. Covers hosting, server security, database backups, and software updates.
+                        </p>
+                        <div class="mt-3 inline-block bg-white px-4 py-2 rounded-lg border-2 border-amber-200">
+                            <span class="font-bold text-amber-900 text-lg">₹ 10,000 / Year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secure Payments Section -->
+        <section class="gradient-bg text-white p-8 rounded-2xl flex items-center justify-between shadow-xl mb-12">
+            <div>
+                <h4 class="font-bold text-2xl mb-2">🔒 Secure Payments</h4>
+                <p class="text-white/90">All payments are processed securely to our registered entity.</p>
+            </div>
+            <div class="text-right bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+                <p class="font-bold text-lg">AVY Overclocked Computing</p>
+                <p class="text-sm text-white/80 uppercase tracking-widest mt-1">Private Limited</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center py-8 border-t-2 border-gray-200">
+            <p class="text-gray-600 text-sm">&copy; 2026 AVY Overclocked Computing PVT Limited. All Rights Reserved.</p>
+            <p class="text-gray-400 text-xs mt-2">Confidential Proposal • For Settlement Guru Only</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
